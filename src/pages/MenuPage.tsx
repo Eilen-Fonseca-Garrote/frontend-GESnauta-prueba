@@ -6,6 +6,9 @@ import type { MenuNode } from '../api/menu';
 import { currentUser, logout } from '../api/auth';
 import MenuTreeNode from '../components/MenuTreeNode';
 
+// el menu se muestra como estructura de arbol y lo debo cambiar a como esta el portal
+
+
 export default function MenuPage() {
   const [tree, setTree] = useState<MenuNode | null>(null);
   const [error, setError] = useState('');
