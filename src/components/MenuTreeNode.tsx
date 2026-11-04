@@ -22,7 +22,7 @@ export default function MenuTreeNode({ node }: { node: MenuNode }) {
         {node.url && <small style={{ color: '#390' }}>({node.url})</small>}
       </div>
       {hasChildren && open && (
-        <ul style={{ paddingLeft: 12, borderLeft: '1px solid #ddd' }}>
+        <ul style={{ paddingLeft: 12, borderLeft: '1px solid rgb(87, 12, 216)' }}>
           {node.hijos.map((h) => (
             <MenuTreeNode key={h.id} node={h} />
           ))}
