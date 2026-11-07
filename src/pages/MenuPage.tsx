@@ -59,7 +59,7 @@ export default function MenuPage() {
       {!tree && !error && <p>Cargando menú…</p>}
 
       {tree && (
-        <ul style={{ padding: 0 }}>
+        <ul style={{ padding: 0, color: 'blueviolet' }}>
           {tree.hijos.map((h) => (
             <MenuTreeNode key={h.id} node={h} />
           ))}
