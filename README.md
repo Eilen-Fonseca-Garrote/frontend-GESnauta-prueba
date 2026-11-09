@@ -1,8 +1,4 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
+# React + TypeScript + Vite + Tailwind v4 + componentes shadcn/ui (Radix)
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
@@ -73,3 +69,10 @@ export default defineConfig([
 ])
 
 ```
+## 1. Instalar dependencias 
+```bash
+npm i axios react-router-dom lucide-react class-variance-authority clsx tailwind-merge \
+  tw-animate-css @fontsource-variable/inter cmdk \
+  @radix-ui/react-slot @radix-ui/react-label @radix-ui/react-menubar \
+  @radix-ui/react-dialog @radix-ui/react-dropdown-menu @radix-ui/react-collapsible
+npm i -D tailwindcss @tailwindcss/vite
