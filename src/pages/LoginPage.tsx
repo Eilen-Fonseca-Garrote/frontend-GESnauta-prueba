@@ -2,14 +2,14 @@ import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AlertCircle, Eye, EyeOff, Loader2, Lock, User } from 'lucide-react'
-import { loginApi } from '@/api/auth'
+import { loginApi } from '../api/auth' 
 import logoCircular from '@/assets/logo-circular.jpg'
 import logoHorizontal from '@/assets/logo-horizontal.jpg'
-import { Alert, AlertDescription } from '@/components/ui/alert'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { getErrorMessage } from '@/lib/errors'
+import { Alert, AlertDescription } from '../components/ui/alert'
+import { Button } from '../components/ui/button'
+import { Input } from '../components/ui/input'
+import { Label } from '../components/ui/label'
+import { getErrorMessage } from '../lib/errors'
 
 export default function LoginPage() {
   const [login, setLogin] = useState('')
@@ -43,7 +43,7 @@ export default function LoginPage() {
           <div className="flex size-52 items-center justify-center rounded-full bg-white p-2 shadow-2xl ring-[6px] ring-brand-orange">
             <img src={logoCircular} alt="ETECSA" className="size-full rounded-full object-contain" />
           </div>
-          <h2 className="mt-10 text-3xl font-bold tracking-tight">GESnauta</h2>
+          <h2 className="mt-10 text-3xl font-bold tracking-tight">GesNauta</h2>
           <div className="mt-3 h-[3px] w-16 rounded-full bg-brand-orange" />
           <p className="mt-5 text-base text-white/80">Gestión Comercial de los servicios de internet para salas de navegación de la Empresa de Telecomunicaciones de Cuba S.A.</p>
         </div>
