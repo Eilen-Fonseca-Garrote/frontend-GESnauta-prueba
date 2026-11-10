@@ -1,6 +1,6 @@
 import { Layers, ShieldCheck } from 'lucide-react'
 import logoCircular from '@/assets/logo-circular.jpg'
-import { Badge } from '@/components/ui/badge'
+import { Badge } from '../ui/badge'; 
 
 export default function HomeBanner({ login, sections, options }: { login: string; sections: number; options: number }) {
   return (
