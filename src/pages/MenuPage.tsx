@@ -39,7 +39,7 @@ export default function MenuPage() {
     [setParams],
   )
 
-  // Atajo Ctrl/⌘ + K para buscar
+  // Atajo Ctrln + K para buscar
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {

@@ -1,8 +1,8 @@
 import type { ReactElement } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import { isAuthenticated } from '@/api/auth'
-import LoginPage from '@/pages/LoginPage'
-import MenuPage from '@/pages/MenuPage'
+import { isAuthenticated } from './api/auth'
+import LoginPage from './pages/LoginPage' 
+import MenuPage from './pages/MenuPage'
 
 function Private({ children }: { children: ReactElement }) {
   return isAuthenticated() ? children : <Navigate to="/login" replace />
