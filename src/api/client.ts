@@ -13,8 +13,6 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (r) => r,
   (err) => {
-    // CORRECCIÓN: un 401 en /auth/login significa "credenciales incorrectas".
-    // Antes se recargaba la página y el mensaje de error nunca llegaba a verse.
     const isLoginRequest = String(err.config?.url ?? '').includes('/auth/login')
     if (err.response?.status === 401 && !isLoginRequest) {
       localStorage.removeItem('token')

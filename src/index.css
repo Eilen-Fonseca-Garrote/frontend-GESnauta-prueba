@@ -1,11 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-/* ─────────────────────────────────────────────────────────────
-   Tema ETECSA para shadcn/ui (Tailwind v4).
-   Colores tomados del CSS del portal antiguo:
-   azul #031B8D · naranja #E48D06 · gris-azulado #E4E5F0
-   ───────────────────────────────────────────────────────────── */
+
 @theme inline {
   --font-sans: 'Inter Variable', system-ui, 'Segoe UI', Roboto, sans-serif;
   --color-background: var(--background);
